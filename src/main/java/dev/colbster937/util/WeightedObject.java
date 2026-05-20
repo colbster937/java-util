@@ -1,15 +1,15 @@
 package dev.colbster937.util;
 
-public class WeightedObject {
-  private final WeightedObject obj;
+public class WeightedObject<T> {
+  private final T obj;
   private final int weight;
 
-  public WeightedObject(final WeightedObject obj, final int weight) {
+  public WeightedObject(final T obj, final int weight) {
     this.obj = obj;
     this.weight = weight;
   }
 
-  public final WeightedObject getObject() {
+  public final T getObject() {
     return this.obj;
   }
 
