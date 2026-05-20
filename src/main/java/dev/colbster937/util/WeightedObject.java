@@ -1,6 +1,6 @@
 package dev.colbster937.util;
 
-public abstract class WeightedObject {
+public class WeightedObject {
   private final WeightedObject obj;
   private final int weight;
 
