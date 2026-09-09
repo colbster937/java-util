@@ -4,7 +4,7 @@ public class WeightedObject<T> {
   private final T obj;
   private final int weight;
 
-  public WeightedObject(final T obj, final int weight) {
+  public WeightedObject(T obj, int weight) {
     this.obj = obj;
     this.weight = weight;
   }

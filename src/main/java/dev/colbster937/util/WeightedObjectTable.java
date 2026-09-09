@@ -11,7 +11,7 @@ public class WeightedObjectTable<T> {
   private final SplittableRandom rng;
 
   @SafeVarargs
-  public WeightedObjectTable(final long seed, final WeightedObject<T>... objects) {
+  public WeightedObjectTable(long seed, WeightedObject<T>... objects) {
     final List<WeightedObject<T>> lst = new ArrayList<>();
 
     Collections.addAll(lst, objects);
@@ -20,7 +20,7 @@ public class WeightedObjectTable<T> {
     this.rng = new SplittableRandom(seed);
   }
 
-  public final T computeRandomObject() {
+  public T computeRandomObject() {
     final WeightedObject<T> first = this.objects.get(0);
 
     T ret = first.getObject();

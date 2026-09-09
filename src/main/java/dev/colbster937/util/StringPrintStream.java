@@ -13,7 +13,7 @@ public final class StringPrintStream extends PrintStream {
   }
 
   @Override
-  public final String toString() {
+  public String toString() {
     try {
       return buffer.toString("UTF-8");
     } catch (final UnsupportedEncodingException ex) {
@@ -21,7 +21,7 @@ public final class StringPrintStream extends PrintStream {
     }
   }
 
-  public final void reset() {
+  public void reset() {
     buffer.reset();
   }
 }
